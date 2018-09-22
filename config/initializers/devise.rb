@@ -258,7 +258,7 @@ Devise.setup do |config|
   # up on your models and hooks.
   config.omniauth :github, ENV["GITHUB_APP_ID"], ENV["GITHUB_APP_SECRET"], scope: 'user,public_repo'
   config.omniauth :rabobank, ENV["RABOBANK_APP_ID"], ENV["RABOBANK_APP_SECRET"], scope: 'AIS-Transactions-v2'
-  config.omniauth :bunq, ENV["BUNQ_APP_ID"], ENV["BUNQ_APP_SECRET"], { token_options: { grant_type: 'authorization_code' } }
+  config.omniauth :bunq, ENV["BUNQ_APP_ID"], ENV["BUNQ_APP_SECRET"], { token_params: { grant_type: 'authorization_code' } }
 
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or
