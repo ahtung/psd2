@@ -12,6 +12,7 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
   end
 
   def rabobank
+    puts request.env["omniauth.auth"]
   end
 
   def failure
