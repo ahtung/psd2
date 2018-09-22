@@ -15,6 +15,10 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
     puts request.env["omniauth.auth"]
   end
 
+  def bunq
+    puts request.env["omniauth.auth"]
+  end
+
   def failure
     redirect_to root_path
   end
