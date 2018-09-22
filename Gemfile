@@ -39,7 +39,7 @@ gem 'jbuilder', '~> 2.5'
 gem "slim-rails", "~> 3.1.3"
 gem "devise", "~> 4.5.0"
 gem "omniauth-github", "~> 1.3.0"
-gem "omniauth-rabobank", :git => "git://github.com/ahtung/omniauth-rabobank.git"
+gem "omniauth-rabobank", "~> 0.1.0"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
