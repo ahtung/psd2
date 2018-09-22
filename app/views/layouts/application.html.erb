@@ -16,6 +16,7 @@
       <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
     <% else %>
       <%= link_to "Sign in with Github", user_github_omniauth_authorize_path %>
+      <%= link_to "Sign in with Rabobank", user_rabobank_omniauth_authorize_path %>
     <% end %>
   </body>
 </html>
