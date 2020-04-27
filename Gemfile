@@ -41,6 +41,7 @@ gem "devise", "~> 4.5.0"
 gem "omniauth-github", "~> 1.3.0"
 gem "omniauth-rabobank", "~> 0.1.2"
 gem "omniauth-bunq", "0.1.5"
+gem "omniauth-tink", path: "~/Projects/omniauth-tink"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
